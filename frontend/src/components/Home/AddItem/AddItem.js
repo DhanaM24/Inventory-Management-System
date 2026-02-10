@@ -69,15 +69,15 @@ function AddItem() {
 
       <div className="from_vontiner">
         <div className="from_sub_coon">
-          <form id="itemForm" onSubmit={onSubmit}>
+          <form id="itemForm" onSubmit={(e) => onSubmit(e)}>
             <label htmlFor="itemId">Item ID:</label>
             <br />
             <input
               type="text"
               id="itemId"
-              name="itemId"
+              name="itemId" 
               value={itemId}
-              onChange={onInputChange}
+              oncchange={(e)=> onInputChange(e)} 
               required
             />
             <br />
@@ -90,7 +90,7 @@ function AddItem() {
               id="itemName"
               name="itemName"
               value={itemName}
-              onChange={onInputChange}
+              oncchange={(e)=> onInputChange(e)} 
               required
             />
             <br />
@@ -102,7 +102,7 @@ function AddItem() {
               id="itemCategory"
               name="itemCategory"
               value={itemCategory}
-              onChange={onInputChange}
+              oncchange={(e)=> onInputChange(e)} 
               required
             >
               <option value="" disabled>
@@ -127,7 +127,7 @@ function AddItem() {
               id="itemQuantity"
               name="itemQuantity"
               value={itemQuantity}
-              onChange={onInputChange}
+              oncchange={(e)=> onInputChange(e)} 
               required
             />
             <br />
@@ -140,7 +140,7 @@ function AddItem() {
               id="itemDetails"
               name="itemDetails"
               value={itemDetails}
-              onChange={onInputChange}
+              oncchange={(e)=> onInputChange(e)} 
               required
             />
             <br />
