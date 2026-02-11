@@ -8,6 +8,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/additem" element={<AddItem />} />
+          <Route path="/displayitem" element={<DisplayItem />} />
         </Routes>
       </React.Fragment>
     </div>
