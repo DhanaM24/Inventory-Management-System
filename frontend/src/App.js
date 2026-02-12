@@ -9,6 +9,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/additem" element={<AddItem />} />
           <Route path="/displayitem" element={<DisplayItem />} />
+          <Route path="/updateitem" element={<UpdateItem />} />
         </Routes>
       </React.Fragment>
     </div>

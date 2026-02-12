@@ -15,6 +15,10 @@ function DisplayItem() {
     setInventory(result.data);
   };
 
+
+const updateInventory = (itemId) => {
+  window.location.href = `/update/${itemId}`;
+}
   return (
     <div>
       <h1>Inventory Item</h1>
@@ -40,8 +44,7 @@ function DisplayItem() {
                 <img
                   src={`http://localhost:8080/uploads/${item.itemImage}`}
                   alt={item.itemName}
-                  width="50"
-                  height="50"
+                  width="50"  height="50"
                 />
               </td>
 
@@ -49,6 +52,9 @@ function DisplayItem() {
               <td>{item.itemCategory}</td>
               <td>{item.itemQuantity}</td>
               <td>{item.itemDetails}</td>
+              <td>
+                <button onClick={() => updateNavigate(itemId)}>Update</button>
+                </td>  
             </tr>
           ))}
         </tbody>
